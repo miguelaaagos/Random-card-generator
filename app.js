@@ -36,7 +36,7 @@ function randomCard(cards) {
         : (entity = "&" + cardSuit.toLowerCase() + ";");
     const card = document.createElement("div");
     card.classList.add("card", cardSuit.toLowerCase());
-    card.innerHTML = '<span class="card-value-suit top">' + cardValue + entity + "</span>" + '<span class="card-suit">' + entity + "</span>" + '<span class="card-value-suit bot">' + cardValue + entity + "</span>";
+    card.innerHTML = '<span class="card-value-suit top">' + entity + "</span>" + '<span class="card-suit">' + cardValue + "</span>" + '<span class="card-value-suit bot">' + entity + "</span>";
     document.body.appendChild(card);
 }
 const cards = deckBuilder();
