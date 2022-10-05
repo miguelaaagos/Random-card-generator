@@ -32,6 +32,7 @@ html {
   .card-value-suit {
     display: inline-block;
     position: absolute;
+    margin: auto;
   }
   .card-value-suit.top {
     top: 3px;
@@ -49,5 +50,5 @@ html {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 31%;
+    left: 80px;
   }
